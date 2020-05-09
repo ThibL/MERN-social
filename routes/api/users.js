@@ -7,7 +7,7 @@ const { check, validationResult } = require("express-validator");
 const config = require("config");
 const gravatar = require("gravatar");
 
-const User = require("../../models/Users");
+const User = require("../../models/User");
 
 router.post(
   "/",

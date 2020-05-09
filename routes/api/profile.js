@@ -4,7 +4,7 @@ const { check, validationResult } = require("express-validator");
 const auth = require("../middleware/auth");
 
 const Profile = require("../../models/Profile");
-const User = require("../../models/Users");
+const User = require("../../models/User");
 
 router.get("/me", auth, async (req, res) => {
   try {
@@ -150,7 +150,7 @@ router.delete("/", auth, async (req, res) => {
 // @desc supprimer un profil, utilisateur et ses posts
 // @access Privé
 router.put(
-  "/",
+  "/experience",
   [
     auth,
     [
