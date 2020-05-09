@@ -1,0 +1,4 @@
+{
+  "mongoUri": "mongodb://localhost:27017/jojo",
+  "jwtSecret": "allomamanjojo"
+}
